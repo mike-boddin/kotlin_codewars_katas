@@ -1,0 +1,1 @@
+[Easy Wallpaper](https://www.codewars.com/kata/easy-wallpaper)
