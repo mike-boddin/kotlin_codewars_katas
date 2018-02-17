@@ -1,6 +1,6 @@
 package easyline
 
-import java.math.BigInteger;
+import java.math.BigInteger
 import java.util.*
 
 fun main(args: Array<String>) {
@@ -11,10 +11,10 @@ fun main(args: Array<String>) {
 
 fun easyLine(n: Int): BigInteger {
     if (n < 0) {
-        return BigInteger.ZERO;
+        return BigInteger.ZERO
     }
     if (n == 0) {
-        return BigInteger.ONE;
+        return BigInteger.ONE
     }
     var array = arrayOf(BigInteger("1"))
     for (i in 1..n) {
