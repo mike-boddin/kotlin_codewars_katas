@@ -1,0 +1,1 @@
+[easy-line](http://www.codewars.com/kata/easy-line/train/kotlin)
