@@ -5,12 +5,14 @@ import java.math.BigInteger
 import org.junit.Test
 
 class Disguised2Test {
-    private fun testing(actual:BigInteger, expected:BigInteger) {
+    private fun testing(actual: BigInteger, expected: BigInteger) {
         assertEquals(expected, actual)
     }
-    private fun testing(actual:Long, expected:Long) {
+
+    private fun testing(actual: Long, expected: Long) {
         assertEquals(expected, actual)
     }
+
     @Test
     fun test() {
         println("Fixed tests v1 *********************")
@@ -24,14 +26,27 @@ class Disguised2Test {
     }
 
     @Test
-    fun binomialTest(){
-        testing(binomial(2,1), 2)
-        testing(binomial(3,1), 3)
-        testing(binomial(3,2), 3)
-        testing(binomial(8,1), 8)
-        testing(binomial(8,2), 28)
-        testing(binomial(8,3), 56)
-        testing(binomial(8,4), 70)
+    fun binomialTest() {
+        testing(binomial(2, 1), 2)
+        testing(binomial(3, 1), 3)
+        testing(binomial(3, 2), 3)
+        testing(binomial(8, 1), 8)
+        testing(binomial(8, 2), 28)
+        testing(binomial(8, 3), 56)
+        testing(binomial(8, 4), 70)
+    }
+
+    @Test
+    fun pascalsLineTest() {
+        for(i in 0..10) {
+            pascalsLine(i)
+        }
+    }
+
+    @Test
+    fun createPartialPascalTest() {
+        createPartialPascal(0, 10)
+        createPartialPascal(5, 10)
     }
 
 }
