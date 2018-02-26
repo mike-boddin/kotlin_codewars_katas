@@ -18,10 +18,12 @@ class Disguised2Test {
         println("Fixed tests v1 *********************")
         testing(v1(1, 12), BigInteger.valueOf(36))
         testing(v1(3, 69), BigInteger.valueOf(483))
+        testing(v1(12, 70), BigInteger.valueOf(1750))
 
         println("Fixed tests u1 *********************")
         testing(u1(1, 14), BigInteger.valueOf(28))
         testing(u1(4, 18), BigInteger.valueOf(90))
+        testing(u1(13, 18), BigInteger.valueOf(252))
 
     }
 
@@ -30,10 +32,12 @@ class Disguised2Test {
         println("Fixed tests vEff *********************")
         testing(vEff(1, 12), BigInteger.valueOf(36))
         testing(vEff(3, 69), BigInteger.valueOf(483))
+        testing(vEff(12, 70), BigInteger.valueOf(1750))
 
         println("Fixed tests uEff *********************")
         testing(uEff(1, 14), BigInteger.valueOf(28))
         testing(uEff(4, 18), BigInteger.valueOf(90))
+        testing(uEff(13, 18), BigInteger.valueOf(252))
 
     }
 
